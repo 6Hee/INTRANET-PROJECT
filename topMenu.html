@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="top.css">
+</head>
+<body>
+    <div id="sidebar">
+        <div id="topMenu">
+            <a href="/main.asp" target="mainFrame">
+                <img src="/img/logo_on.png" alt="Company Logo">
+            </a>
+        </div>
+        <div id="navBar">
+            <div class="flex">
+                <img class="icon" src="icon/address-book-regular.svg" alt="">
+                <!-- <% if csAuth ="2" then %> -->
+                <a href="/mainFrame.asp?menu=user" target="mainFrame">사원관리</a>
+                <!-- <% end if %> -->
+            </div>
+            <div class="flex">
+                <img class="icon" src="icon/address-book-regular.svg" alt="">
+                <a href="/mainFrame.asp?menu=bbs" target="mainFrame">게시판</a>
+            </div>
+            <div class="flex">
+                <img class="icon" src="icon/address-book-regular.svg" alt="">
+                <a href="/mainFrame.asp?menu=client" target="mainFrame">고객관리</a>
+            </div>
+            <div class="flex">
+                <img class="icon" src="icon/address-book-regular.svg" alt="">
+                <a href="/mainFrame.asp?menu=report" target="mainFrame">지원보고서</a>
+            </div>
+            <div class="flex">
+                <img class="icon" src="icon/address-book-regular.svg" alt="">
+                <a href="/mainFrame.asp?menu=maintenance_new" target="mainFrame">유지보수관리</a>
+            </div>
+            <div class="flex">
+                <img class="icon" src="icon/address-book-regular.svg" alt="">
+                <a href="/mainFrame.asp?menu=sale" target="mainFrame">영업관리</a>
+            </div>
+            <div class="flex">
+                <img class="icon" src="icon/address-book-regular.svg" alt="">
+                <a href="/mainFrame.asp?menu=stock" target="mainFrame">재고관리</a>
+            </div>
+            <div class="flex">
+                <img class="icon" src="icon/address-book-regular.svg" alt="">
+                <a href="/mainFrame.asp?menu=schedule" target="mainFrame">일반일정관리</a>
+            </div>
+            <div class="flex">
+                <img class="icon" src="icon/address-book-regular.svg" alt="">
+                <a href="/mainFrame.asp?menu=schedule_test" target="mainFrame">SE일정관리</a>
+            </div>
+        </div>
+        <div id="userInfo">
+            <b><%= Request.Cookies("inkus")("csName") %></b>님 환영합니다. <br>
+            <%= Year(Now) & "." & Month(Now) & "." & Day(Now) %> <%= WeekdayName(DatePart("w",Now)) %>
+        </div>
+    </div>
+</body>
+</html>
