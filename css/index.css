@@ -1,18 +1,10 @@
 body {
     margin: 0;
-    padding: 0;
-    display: flex;
-    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: #ebe9e9;
 }
 
-.sideFrame{
-    width: 200px;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.contentFrame{
-    flex: 1;
-    height: 100vh;
-    overflow: hidden;
+#sideFrame {
+    width: 240px;
+    height: 100%;
 }

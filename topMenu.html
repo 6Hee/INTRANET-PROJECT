@@ -3,100 +3,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Sidevar</title>
     <link rel="stylesheet" href="css/top.css" />
-    <!-- Boxicons CSS -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
   </head>
-  <body>
-    <nav>
-      <div class="sidebar">
-        <div class="logo">
-            <a href="/main.asp" target="mainFrame">
-                <img src="/img/logo_on.png" alt="Company Logo">
-            </a>
-        </div>
-        <div class="sidebar-content">
-          <ul class="lists">
-            <!-- <% if csAuth ="2" then %> -->
-            <li class="list">
-              <a href="/mainFrame.asp?menu=user" target="mainFrame" class="nav-link">
-                <i class="bx bx-home-alt icon"></i>
-                <span class="link">사원관리</span>
-              </a>
-            </li>
-            <!-- <% end if %> -->
-            <li class="list">
-              <a href="/mainFrame.asp?menu=bbs" target="mainFrame" class="nav-link">
-                <i class="bx bx-bar-chart-alt-2 icon"></i>
-                <span class="link">게시판</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="/mainFrame.asp?menu=client" target="mainFrame" class="nav-link">
-                <i class="bx bx-bell icon"></i>
-                <span class="link">고객관리</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="/mainFrame.asp?menu=report" target="mainFrame" class="nav-link">
-                <i class="bx bx-message-rounded icon"></i>
-                <span class="link">지원보고서</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="/mainFrame.asp?menu=maintenance_new" target="mainFrame" class="nav-link">
-                <i class="bx bx-pie-chart-alt-2 icon"></i>
-                <span class="link">유지보수관리</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="/mainFrame.asp?menu=sale" target="mainFrame" class="nav-link">
-                <i class="bx bx-heart icon"></i>
-                <span class="link">영업관리</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="/mainFrame.asp?menu=stock" target="mainFrame" class="nav-link">
-                <i class="bx bx-folder-open icon"></i>
-                <span class="link">재고관리</span>
-              </a>
-            </li>
-            <li class="list">
-                <a href="/mainFrame.asp?menu=schedule" target="mainFrame" class="nav-link">
-                  <i class="bx bx-folder-open icon"></i>
-                  <span class="link">일반일정관리</span>
-                </a>
-            </li>
-            <li class="list">
-            <a href="/mainFrame.asp?menu=schedule_test" target="mainFrame" class="nav-link">
-                <i class="bx bx-folder-open icon"></i>
-                <span class="link">SE일정관리</span>
-            </a>
-            </li>
-          </ul>
+  <body style="height: 100%;">
 
-
-          <div class="bottom-cotent">
-            <li class="list">
-              <a href="#" class="nav-link">
-                <i class="bx bx-cog icon"></i>
-                <span class="link">Settings</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="#" class="nav-link">
-                <i class="bx bx-log-out icon"></i>
-                <span class="link">Logout</span>
-              </a>
-            </li>
-          </div>
-        </div>
+    <div class="sidebar">
+      <div class="logo">
+        <img src="./img/logo_on.png" alt="">
       </div>
-    </nav>
-    <!-- <script src="script.js"></script> -->
+      <ul class="main">
+        <!-- <% if csAuth ="2" then %> -->
+        <li>
+          <a href="/mainFrame.asp?menu=user">
+            <i class="fa-solid fa-user"></i>
+            <span>사원관리</span>
+          </a>
+        </li>
+        <!-- <% end if %> -->
+        <li>
+          <a href="/mainFrame.asp?menu=bbs">
+            <i class="fa-solid fa-clipboard"></i>
+            <span>게시판</span>
+          </a>
+        </li>
+        <li>
+          <a href="/mainFrame.asp?menu=client">
+            <i class="fa-solid fa-file-pen"></i>
+            <span>고객관리</span>
+          </a>
+        </li>
+        <li>
+          <a href="/mainFrame.asp?menu=report">
+            <i class="fa-solid fa-envelope-open-text"></i>
+            <span>지원보고서</span>
+          </a>
+        </li>
+        <li>
+          <a href="/mainFrame.asp?menu=maintenance_new">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <span>유지보수관리</span>
+          </a>
+        </li>
+        <li>
+          <a href="/mainFrame.asp?menu=sale">
+            <i class="fa-regular fa-id-card"></i>
+            <span>영업관리</span>
+          </a>
+        </li>
+        <li>
+          <a href="/mainFrame.asp?menu=stock">
+            <i class="fa-solid fa-dolly"></i>
+            <span>재고관리</span>
+          </a>
+        </li>
+        <li>
+          <a href="/mainFrame.asp?menu=schedule">
+            <i class="fa-solid fa-clock"></i>
+            <span>일반일정관리</span>
+          </a>
+        </li>
+        <li>
+          <a href="/user/user_mine.asp" target="mainFrame">
+            <i class="fa-solid fa-cog"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li class="logout">
+          <a href="/logout.asp" target="_top">
+            <i class="fa-solid fa-sign-out-alt"></i>
+            <span>Logout</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/140401ad7a.js" crossorigin="anonymous"></script>
   </body>
 </html>
