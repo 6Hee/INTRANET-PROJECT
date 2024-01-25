@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body onload="document.form1.id.focus()">
+    
+    <div class="login-container">
+        <div class="login-box">
+          <div class="login-logo">
+            <img src="/img/logo_on.png" alt="로고">
+          </div>
+          
+          <form name="form1" method="post" action="login_ok.asp">
+            <input type='hidden' name='mode' value='logon'>
+            <input type="hidden" name="goUrl" value="<%=goUrl%>">
+
+            <div class="form-group">
+              <input name="id" id="id" type="text" class="form-input" placeholder="ID">
+            </div>
+            <div class="form-group">
+              <input name="pw" id="pw" type="password" class="form-input" placeholder="PASSWORD">
+            </div>
+            <div class="form-group checkbox-label">
+              <input type="checkbox" name="authtime" value="3600" id="authtime">
+              <label class="checkbox-font" for="authtime">로그인 상태 유지</label>
+            </div>
+
+            <button type="submit" class="login-button" onclick="formCheck();">LOG IN</button>
+
+            <div class="form-group checkbox-label mb-hide">
+                <input type="checkbox" name="authtime" value="3600" id="authtime">
+                <label class="checkbox-font" for="authtime">로그인 상태 유지</label>
+              </div>
+          </form>
+        </div>
+      </div>
+
+
+</body>
+</html>

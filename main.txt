@@ -1,0 +1,189 @@
+<html>
+<head>
+<title></title>
+<link href="/style.css" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+</head>
+<BODY bgcolor="#FFFFFF" text="#000000">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td colspan="2">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" class="table02">
+				<tr> 
+				  <td height="1"><img src="/image/spacer.gif"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr> 
+		<td height="10"></td>
+	</tr>
+</table>
+<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+	<TD WIDTH="50%" valign="top">
+		<table width="95%" border="0" cellspacing="0" cellpadding="0">
+		<tr> 
+			<td height="30" align="left" valign="bottom" class="title_b"><img src="/image/title_icon.gif" border="0"><font color="red"> 유지보수 계약 이슈 사항 (유상/무상 만료 3개월 전)</font></td>
+			<td align="right" valign="bottom"><a href="/maintenance/list.asp" onFocus="this.blur()"><img src="/image/more.gif" border="0"></a></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0" class="table02">
+					<tr>
+						<td height="4"><img src="images/spacer.gif" width="1" height="1"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		</table>
+		<table width="95%" border="0" cellspacing="0" cellpadding="0">
+		<tr> 
+			<td align="center">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<!--maintenance_list-->
+					<tr height="22">
+						<td width="10"><li></td>
+						<td width="*"><a href="/maintenance/list.asp?ci_seq={ci_seq}">{c_title}</a> </td>
+						<td width="60" align="right">{sw_check_date_i}</td>
+					</tr>
+					<!--/maintenance_list-->
+				</table>
+			</td>
+		</tr>
+		</table>
+		<br>
+				<table width="95%" border="0" cellspacing="0" cellpadding="0">
+		<tr> 
+			<td height="30" align="left" valign="bottom" class="title_b"><img src="/image/title_icon.gif" border="0"> 엔지니어 게시판</td>
+			<td align="right" valign="bottom"><a href="/mainFrame.asp?menu=schedule" onFocus="this.blur()"><img src="/image/more.gif" border="0"></a></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0" class="table02">
+					<tr>
+						<td height="4"><img src="images/spacer.gif" width="1" height="1"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		</table>		
+				<table width="95%" border="0" cellspacing="0" cellpadding="0">
+		<tr> 
+			<td align="center">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<!--manage_list-->
+					<tr height="22">
+						<td width="10"><li></td>
+						<td width="*"><a href="/bbs/view.asp?bbsid=4&seq={seq}">{title}</a> </td>
+						<td width="60" align="right">{expdate}</td>
+					</tr>
+					<!--/manage_list-->
+				</table>
+			</td>
+		</tr>
+		</table>
+		<br>
+		<table width="95%" border="0" cellspacing="0" cellpadding="0">
+		<tr> 
+			<td height="30" align="left" valign="bottom" class="title_b"><img src="/image/title_icon.gif" border="0"> 나의 일정</td>
+			<td align="right" valign="bottom"><a href="/mainFrame.asp?menu=schedule" onFocus="this.blur()"><img src="/image/more.gif" border="0"></a></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0" class="table02">
+					<tr>
+						<td height="4"><img src="images/spacer.gif" width="1" height="1"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		</table>
+		<table width="95%" border="0" cellspacing="0" cellpadding="0">
+		<tr> 
+			<td align="center">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<!--schedule_list-->
+					<tr height="35">
+						<td width="10"><li></td>
+						<td width="*"><a href="/schedule/schedule_view.asp?sch_seq={seq}&years={yy}&mon={mm}&dd={dd}">{title}</a> <br>
+						  {inuser} {emoticon}
+						</td>
+						<td width="95" align="right">{stime}</td>
+					</tr>
+					<!--/schedule_list-->
+				</table>
+			</td>
+		</tr>
+		</table>
+	</TD>
+	<TD WIDTH="50%" valign="top">
+		<table width="95%" border="0" cellspacing="0" cellpadding="0">
+		<tr> 
+			<td height="30" align="left" valign="bottom" class="title_b"><img src="/image/title_icon.gif" border="0"> 최근 보고서 (최근 25건)</td>
+			<td align="right" valign="bottom"><a href="/mainFrame.asp?menu=report" onFocus="this.blur()"><img src="/image/more.gif" border="0"></a></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0" class="table02">
+					<tr> 
+					  <td height="4"><img src="images/spacer.gif" width="1" height="1"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		</table>
+		<table width="95%" border="0" cellspacing="0" cellpadding="0">
+		<tr> 
+			<td align="center" height="110">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<!--report_list-->
+					<tr height="22">
+						<td width="10"><li></td>
+						<td width="*">[{c_title}]:::<a href="/report/view.asp?ci_seq={ci_seq}&cr_seq={cr_seq}">{title}-{manager}:::{status}</a> {new}</td>
+						<td width="60" align="right">{idate}</td>
+					</tr>
+					<!--/report_list-->
+				</table>
+			</td>
+		</tr>
+		</table>
+		<br>
+						<table width="95%" border="0" cellspacing="0" cellpadding="0">
+		<tr> 
+			<td height="30" align="left" valign="bottom" class="title_b"><img src="/image/title_icon.gif" border="0"> 
+			사내 공고</td>
+			<td align="right" valign="bottom"><a href="/mainFrame.asp?menu=bbs" onFocus="this.blur()"><img src="/image/more.gif" border="0"></a></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0" class="table02">
+					<tr> 
+					  <td height="4"><img src="images/spacer.gif" width="1" height="1"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		</table>
+		<table width="95%" border="0" cellspacing="0" cellpadding="0">
+		<tr> 
+			<td align="center">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<!--notice_list-->
+					<tr height="22">
+						<td width="10"><li></td>
+						<td width="*"><a href="/bbs/view.asp?bbsid=1&seq={seq}">{title}</a> {new}</td>
+						<td width="95" align="right">{idate}</td>
+					</tr>
+					<!--/notice_list-->
+				</table>
+			</td>
+		</tr>
+		</table>
+	</TD>
+</TR>
+</TABLE>
+</body>
+</html>

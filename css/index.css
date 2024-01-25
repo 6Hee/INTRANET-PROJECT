@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #ebe9e9;
+}
+
+#sideFrame {
+    width: 240px;
+    height: 100%;
+}
